@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# Data and experiment outputs (large, reproducible from the scripts)
+data/
+runs/
+reports/figures/
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/

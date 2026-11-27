@@ -1,0 +1,40 @@
+[project]
+name = "oilslick"
+version = "0.1.0"
+description = "Oil slick segmentation in Sentinel-1 SAR imagery: U-Net vs Attention U-Net"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "imagecodecs>=2024.1",
+    "matplotlib>=3.8",
+    "numpy>=1.26",
+    "pandas>=2.1",
+    "py7zr>=1.1",
+    "scikit-learn>=1.4",
+    "tifffile>=2024.1",
+    "torch>=2.4",
+    "tqdm>=4.66",
+]
+
+[project.scripts]
+oilslick-prepare = "oilslick.prepare:main"
+oilslick-train = "oilslick.train:main"
+oilslick-evaluate = "oilslick.evaluate:main"
+oilslick-visualize = "oilslick.visualize:main"
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

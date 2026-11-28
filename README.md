@@ -9,10 +9,10 @@ Both notebooks clone (or pull) [imbishal7/oil-slick-segmentation](https://github
 and install it, so they always run the latest `src/` on `main`. Everything persistent lives
 in `MyDrive/oil-slick-segmentation/`.
 
-| Notebook | Runtime | What it does |
-|---|---|---|
-| [01_prepare_data.ipynb](notebooks/01_prepare_data.ipynb) | CPU | download → downsample → audit → split → cache on Drive |
-| [02_train_evaluate.ipynb](notebooks/02_train_evaluate.ipynb) | GPU | train U-Net (E1) and Attention U-Net (E2), evaluate, plot |
+| Notebook | | Runtime | What it does |
+|---|---|---|---|
+| [01_prepare_data.ipynb](notebooks/01_prepare_data.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/imbishal7/oil-slick-segmentation/blob/main/notebooks/01_prepare_data.ipynb) | CPU | download → downsample → audit → split → cache on Drive |
+| [02_train_evaluate.ipynb](notebooks/02_train_evaluate.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/imbishal7/oil-slick-segmentation/blob/main/notebooks/02_train_evaluate.ipynb) | GPU | train U-Net (E1) and Attention U-Net (E2), evaluate, plot |
 
 Both notebooks are resumable: after a disconnect, run all cells again.
 
